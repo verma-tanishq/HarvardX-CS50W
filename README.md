@@ -25,7 +25,7 @@ If you look through the URL, you should see that one of the GET parameters in th
 It turns out that, while the other parameters provide useful data to Google, only the q parameter is required to perform a search. You can test this for yourself by visiting https://www.google.com/search?q=Harvard, deleting all the other parameters. You should see the same Google results!
 
 Using this information, we can actually re-implement a front end for Google’s homepage. Paste the below into an HTML file called index.html, and open it in a browser.
-
+```
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -38,6 +38,7 @@ Using this information, we can actually re-implement a front end for Google’s 
         </form>
     </body>
 </html>
+```
 When you open this page in a browser, you should see a (very simple) HTML form. Type in a search query like “Harvard” and click “Google Search”, and you should be taken to Google’s search results page!
 
 How did that work? In this case, the action attribute on the form told the browser that when the form is submitted, the data should be sent to https://google.com/search. And by adding an input field to the form whose name attribute was q, whatever the user types into that input field is included as a GET parameter in the URL.
