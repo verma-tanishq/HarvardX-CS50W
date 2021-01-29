@@ -1,15 +1,15 @@
 # HarvardX-CS50W
-#CS50's Web Programming with Python and JavaScript
+# CS50's Web Programming with Python and JavaScript
 
-#Search
+# Search
 Design a front-end for Google Search, Google Image Search, and Google Advanced Search.
 
-#Background
+# Background
 Recall from lecture that we can create an HTML form using a <form> tag and can add <input> tags to create input fields for that form. Later in the course, we’ll see how to write web applications that can accept form data as input. For this project, we’ll write forms that send data to an existing web server: in this case, Google’s.
 
 When you perform a Google search, as by typing in a query into Google’s homepage and clicking the “Google Search” button, how does that query work? Let’s try to find out.
 
-Navigate to https://www.google.com/, type in a query like “Harvard” into the search field, and click the “Google Search” button.
+Navigate to ```https://www.google.com/```, type in a query like “Harvard” into the search field, and click the “Google Search” button.
 
 As you probably expected, you should see Google search results for “Harvard.” But now, take a look at the URL. It should begin with https://www.google.com/search, the route on Google’s website that allows for searching. But following the route is a ?, followed by some additional information.
 
@@ -45,20 +45,20 @@ How did that work? In this case, the action attribute on the form told the brows
 
 Your task in this project is to expand on this site, creating your own front end for Google Search, as by exploring Google’s interface to identify what GET parameters it expects and adding the necessary HTML and CSS to your website.
 
-#Getting Started
+# Getting Started
 Download the distribution code from ```https://cdn.cs50.net/web/2020/spring/projects/0/search.zip and unzip it.```
 
-#Specification
+# Specification
 Your website must meet the following requirements.
 
-#Pages. Your website should have at least three pages: one for Google Search, one for Google Image Search, and one for Google Advanced Search.
+# Pages. Your website should have at least three pages: one for Google Search, one for Google Image Search, and one for Google Advanced Search.
 On the Google Search page, there should be links in the upper-right of the page to go to Image Search or Advanced Search. On each of the other two pages, there should be a link in the upper-right to go back to Google Search.
-#Query Text. On the Google Search page, the user should be able to type in a query, click “Google Search”, and be taken to the Google search results for that page.
+# Query Text. On the Google Search page, the user should be able to type in a query, click “Google Search”, and be taken to the Google search results for that page.
 Like Google’s own, your search bar should be centered with rounded corners. The search button should also be centered, and should be beneath the search bar.
 
-#Query Images. On the Google Image Search page, the user should be able to type in a query, click a search button, and be taken to the Google Image search results for that page.
+# Query Images. On the Google Image Search page, the user should be able to type in a query, click a search button, and be taken to the Google Image search results for that page.
 
-#Query Advanced. On the Google Advanced Search page, the user should be able to provide input for the following four fields (taken from Google’s own advanced search options)
+# Query Advanced. On the Google Advanced Search page, the user should be able to provide input for the following four fields (taken from Google’s own advanced search options)
 Find pages with… “all these words:”
 Find pages with… “this exact word or phrase:”
 Find pages with… “any of these words:”
@@ -68,7 +68,7 @@ Consistent with Google’s own CSS, the “Advanced Search” button should be b
 Lucky. Add an “I’m Feeling Lucky” button to the main Google Search page. Consistent with Google’s own behavior, clicking this link should take users directly to the first Google search result for the query, bypassing the normal results page.
 Aesthetics. The CSS you write should match Google’s own aesthetics as best as possible.
 
-#Hints
+# Hints
 To determine what the parameter names should be, you’re welcome to experiment with making Google searches, and looking at the resulting URL. It may also be helpful to open the “Network” inspector (accessible in Google Chrome by choosing View -> Developer -> Developer Tools) to view details about requests your browser makes to Google.
 Any <input> element (whether its type is text, submit, number, or something else entirely) can have name and value attributes that will become GET parameters when a form is submitted.
 You may also find it helpful to look at Google’s own HTML to answer these questions. In most browsers, you can control-click or right-click on a page and choose “View Page Source” to view the page’s underlying HTML.
